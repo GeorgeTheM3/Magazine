@@ -26,6 +26,15 @@ class Shop {
         print(basket)
     }
     
+    func removeOneFromBasket(barcode: Int) {
+        for item in basket {
+            if let index = basket.firstIndex(where: { $0.barcode == item.barcode }){
+            basket.remove(at: index)
+            break
+            }
+        }
+    }
+    
     func check() {
         var totalMoney: Int = 0
         var numberOfProduct = 0
@@ -43,12 +52,12 @@ class Shop {
         }
         
         print("""
-            |
-            |Total money: \(totalMoney)
-            |------------------
-            |Thanks for coming!
-             -----------------
-            """)
+        |
+        |Total money: \(totalMoney)
+        |------------------
+        |Thanks for coming!
+         -----------------
+        """)
     }    
 }
 

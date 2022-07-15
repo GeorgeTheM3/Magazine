@@ -16,6 +16,7 @@ let chips = Chips(name: "Lays", price: 70, barcode: 220491)
 magnit.addProductToBasket(product: water, howMany: 2)
 magnit.removeFromBasket(barcode: water.barcode)
 magnit.addProductToBasket(product: chips, howMany: 4)
+magnit.removeOneFromBasket(barcode: chips.barcode)
 
 chips.infoAboutProduct()
 water.infoAboutProduct()
