@@ -12,6 +12,10 @@ class Product {
     var price: Int
     var barcode: Int
     
+    func infoAboutProduct() {
+        print("\(name) по цене \(price), штрихкод \(barcode)")
+    }
+    
     init(name: String, price: Int, barcode: Int) {
         self.name = name
         self.price = price

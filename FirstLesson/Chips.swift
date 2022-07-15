@@ -8,5 +8,7 @@
 import Foundation
 
 class Chips: Product {
-    
+    override func infoAboutProduct() {
+        print("\(name) по цене \(price)")
+    }
 }

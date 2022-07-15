@@ -9,5 +9,8 @@ import Foundation
 
 class Water: Product {
     
+    override func infoAboutProduct() {
+        print("\(name) по цене \(price)")
+    }
 }
 

@@ -17,7 +17,6 @@ class Shop {
     
     func addProductToBasket(product: Product, howMany: Int) {
         basket += Array(repeating: product,count: howMany)
-        print(basket)
     }
     
     func removeFromBasket(barcode: Int) {

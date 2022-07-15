@@ -8,5 +8,7 @@
 import Foundation
 
 class Chocolate: Product {
-    
+    override func infoAboutProduct() {
+        print("\(name) по цене \(price)")
+    }
 }
